@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EChanneling.iml" filepath="$PROJECT_DIR$/EChanneling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EChanneling-back end/EChanneling-back end.iml" filepath="$PROJECT_DIR$/EChanneling-back end/EChanneling-back end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EChanneling-front end/EChanneling-front end.iml" filepath="$PROJECT_DIR$/EChanneling-front end/EChanneling-front end.iml" />
+    </modules>
+  </component>
+</project>
