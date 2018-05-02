@@ -16,6 +16,7 @@ import {AdminHomeFooterComponent} from './view/admin-home-footer/admin-home-foot
 import {LoginComponent} from './view/login/login.component';
 import {AccountSettingComponent} from './view/account-setting/account-setting.component';
 import { AboutComponent } from './view/about/about.component';
+import { AddDoctorComponent } from './view/add-doctor/add-doctor.component';
 
 
 const routes: Routes = [
@@ -62,7 +63,8 @@ const routes: Routes = [
     AdminHomeFooterComponent,
     LoginComponent,
     AccountSettingComponent,
-    AboutComponent
+    AboutComponent,
+    AddDoctorComponent
   ],
   imports: [
     CommonModule,
