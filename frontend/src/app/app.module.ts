@@ -17,7 +17,12 @@ import {LoginComponent} from './view/login/login.component';
 import {AccountSettingComponent} from './view/account-setting/account-setting.component';
 import { AboutComponent } from './view/about/about.component';
 import { AddDoctorComponent } from './view/add-doctor/add-doctor.component';
-
+import {ManageHospitalComponent} from './view/add-hospital/manage-hospital.component';
+import {AddNewScheduleComponent} from './view/add-schedule/add-new-schedule.component';
+import {ModifyScheduleComponent} from './view/modify-schedule/modify-schedule.component';
+import {RemoveHospitalComponent} from './view/remove-hospital/remove-hospital.component';
+import {RemoveScheduleComponent} from './view/remove-schedule/remove-schedule.component';
+import {DeleteDoctorComponent} from './view/remove-doctor/delete-doctor.component';
 
 const routes: Routes = [
   {
@@ -37,8 +42,36 @@ const routes: Routes = [
     component: AccountSettingComponent
   },
   {
+    path: 'addDoctor',
+    component: AddDoctorComponent
+  },
+  {
+    path: 'addHospital',
+    component: ManageHospitalComponent
+  },
+  {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'addSchedule',
+    component: AddNewScheduleComponent
+  },
+  {
+    path: 'deleteHospital',
+    component: RemoveHospitalComponent
+  },
+  {
+    path: 'updateSchedule',
+    component: ModifyScheduleComponent
+  },
+  {
+    path: 'deleteSchedule',
+    component: RemoveScheduleComponent
+  },
+  {
+    path: 'deleteDoctor',
+    component: DeleteDoctorComponent
   },
   {
     path: '',
@@ -64,7 +97,13 @@ const routes: Routes = [
     LoginComponent,
     AccountSettingComponent,
     AboutComponent,
-    AddDoctorComponent
+    AddDoctorComponent,
+    ManageHospitalComponent,
+    RemoveHospitalComponent,
+    RemoveScheduleComponent,
+    DeleteDoctorComponent,
+    AddNewScheduleComponent,
+    ModifyScheduleComponent
   ],
   imports: [
     CommonModule,

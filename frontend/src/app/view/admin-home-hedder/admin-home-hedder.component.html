@@ -14,42 +14,42 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active px-lg-4">
-          <a class="nav-link text-uppercase text-expanded" href="">Home
+          <a class="nav-link text-uppercase text-expanded" href="#" routerLink="adminHome">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item px-lg-4">
           <div class="dropdown">
-            <a class="nav-link text-uppercase text-expanded" href="">Doctor</a>
+            <a class="nav-link text-uppercase text-expanded" href="" routerLink="adminHome">Doctor</a>
             <div class="dropdown-content">
-              <a href="#">Add Doctor</a>
+              <a href="#" routerLink="addDoctor">Add Doctor</a>
               <a href="#">Update Doctor</a>
-              <a href="#">Delete Doctor</a>
+              <a href="#" routerLink="deleteDoctor">Delete Doctor</a>
             </div>
           </div>
         </li>
         <li class="nav-item px-lg-4">
           <div class="dropdown">
-            <a class="nav-link text-uppercase text-expanded" href="">Hospital</a>
+            <a class="nav-link text-uppercase text-expanded" href="" routerLink="adminHome" >Hospital</a>
             <div class="dropdown-content">
-              <a href="#">Add Hospital</a>
-              <a href="#">Delete Hospital</a>
+              <a href="#" routerLink="addHospital">Add Hospital</a>
+              <a href="#" routerLink="deleteHospital">Delete Hospital</a>
             </div>
           </div>
         </li>
         <li class="nav-item px-lg-4">
           <div class="dropdown">
-            <a class="nav-link text-uppercase text-expanded" href="">Schedule</a>
+            <a class="nav-link text-uppercase text-expanded" href="" routerLink="adminHome" >Schedule</a>
             <div class="dropdown-content">
-              <a href="#">Add Schedule</a>
-              <a href="#">Update Schedule</a>
-              <a href="#">Delete Schedule</a>
+              <a href="#" routerLink="addSchedule">Add Schedule</a>
+              <a href="#" routerLink="updateSchedule">Update Schedule</a>
+              <a href="#" routerLink="deleteSchedule">Delete Schedule</a>
             </div>
           </div>
         </li>
         <li class="nav-item px-lg-4">
           <div class="dropdown">
-            <a class="nav-link text-uppercase text-expanded" href="">Appointment</a>
+            <a class="nav-link text-uppercase text-expanded" href="" routerLink="adminHome">Appointment</a>
             <div class="dropdown-content">
               <a href="#">Add Appointment</a>
               <a href="#">Postpone Appointment</a>
@@ -59,7 +59,12 @@
         </li>
         <li class="nav-item px-lg-4">
           <div class="dropdown">
-            <a class="nav-link text-uppercase text-expanded" href="">Log Out</a>
+            <a class="nav-link text-uppercase text-expanded" href="#" routerLink="home">Log Out</a>
+          </div>
+
+        <li class="nav-item px-lg-4">
+          <div class="dropdown">
+            <a class="nav-link text-uppercase text-expanded" href="#" routerLink="accountSetting"></a>
           </div>
         </li>
       </ul>
