@@ -15,14 +15,16 @@ import {AdminHomeHedderComponent} from './view/admin-home-hedder/admin-home-hedd
 import {AdminHomeFooterComponent} from './view/admin-home-footer/admin-home-footer.component';
 import {LoginComponent} from './view/login/login.component';
 import {AccountSettingComponent} from './view/account-setting/account-setting.component';
-import { AboutComponent } from './view/about/about.component';
-import { AddDoctorComponent } from './view/add-doctor/add-doctor.component';
+import {AboutComponent } from './view/about/about.component';
+import {AddDoctorComponent } from './view/add-doctor/add-doctor.component';
 import {ManageHospitalComponent} from './view/add-hospital/manage-hospital.component';
 import {AddNewScheduleComponent} from './view/add-schedule/add-new-schedule.component';
 import {ModifyScheduleComponent} from './view/modify-schedule/modify-schedule.component';
 import {RemoveHospitalComponent} from './view/remove-hospital/remove-hospital.component';
 import {RemoveScheduleComponent} from './view/remove-schedule/remove-schedule.component';
 import {DeleteDoctorComponent} from './view/remove-doctor/delete-doctor.component';
+import {AddSpecialtyComponent} from './view/add-specialty/add-specialty.component';
+import { RemoveSpecialtyComponent } from './view/remove-specialty/remove-specialty.component';
 
 const routes: Routes = [
   {
@@ -74,6 +76,14 @@ const routes: Routes = [
     component: DeleteDoctorComponent
   },
   {
+    path: 'addSpecialty',
+    component: AddSpecialtyComponent
+  },
+  {
+    path: 'removeSpecialty',
+    component: RemoveSpecialtyComponent
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -103,7 +113,9 @@ const routes: Routes = [
     RemoveScheduleComponent,
     DeleteDoctorComponent,
     AddNewScheduleComponent,
-    ModifyScheduleComponent
+    ModifyScheduleComponent,
+    AddSpecialtyComponent,
+    RemoveSpecialtyComponent
   ],
   imports: [
     CommonModule,

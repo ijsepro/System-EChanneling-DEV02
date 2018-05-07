@@ -2,60 +2,96 @@
 <br>
 <div class="container" id="main">
   <br>
-  <form >
-    <div class="form-group row">
-      <div class="col-md-5">
-        <label for="docname"><i><img src="../../../assets/img/doctor.png"></i> Doctor Name</label>
-        <input class="form-control" type="text" id="dname" name="dname" placeholder="Enter doctor Name" autofocus>
-      </div>
-      <div class="col-md-2"  hidden="hidden">
-        <input id="docname" class="form-control" type="text" name="did">
+  <br>
+  <form>
+    <div class="text-center">
+      <h3 class="pink-text mb-5"><strong>Remove Doctor</strong></h3>
+    </div>
+    <div class="form-group ">
+      <div class="md-form">
+        <div class="col-md-9">
+          <label>
+            <i><img src="../../../assets/img/doctor.png"></i> Select Doctor Name :
+          </label>
+          <br>
+          <br>
+          <select class="form-control"></select>
+        </div>
       </div>
     </div>
-    <div class="form-group row">
-      <div class="col-md-5">
-        <label for="dname"><i><img src="../../../assets/img/speciality.png"></i>  Speciality</label>
-        <input class="form-control" type="text" id="speciality" name="speciality" disabled>
-      </div>
-    <!--</div>-->
-    <!--<div class="form-group row">-->
-      <div class="col-md-5">
-        <label for="dname"><i><img src="../../../assets/img/hospital.png"></i>  Hospital</label>
-        <input class="form-control" type="text" id="hospital" name="hospital" disabled>
-      </div>
-    </div>
-    <div class="form-group row">
-      <div class="col-md-5">
-        <label for="dname"><i><img src="../../../assets/img/regNo.png"></i>  Registration No</label>
-        <input class="form-control" type="text" id="rno" name="rno" disabled>
-      </div>
-    <!--</div>-->
-    <!--<div class="form-group row">-->
-      <div class="col-md-5">
-        <label for="dname"><i><img src="../../../assets/img/address.png"></i>  Address</label>
-        <input class="form-control" type="text" id="address" name="address" disabled>
+    <div class="form-group ">
+      <div class="md-form">
+        <div class="col-md-9">
+          <label>
+            <i><img src="../../../assets/img/address.png"></i>  Address :
+          </label>
+
+          <br>
+          <input class="form-control" type="text" name="address">
+        </div>
       </div>
     </div>
-    <div class="form-group row">
-      <div class="col-md-5">
-        <label for="dname"><i><img src="../../../assets/img/nic.png"></i>  NIC</label>
-        <input class="form-control" type="text" id="nic" name="nic" disabled>
+
+    <div class="form-group">
+      <div class="md-form">
+        <div class="col-md-5">
+          <label>
+            <i><img src="../../../assets/img/nic.png"></i>  Nic :
+          </label>
+          <br>
+          <input class="form-control" type="text" name="nic">
+        </div>
+
+        <div class="col-md-5">
+          <label>
+            <i><img src="../../../assets/img/contact.png"></i>  Contact No :
+          </label>
+          <br>
+          <input class="form-control" type="text" name="contact">
+        </div>
+
+        <div class="col-md-5">
+          <label>
+            <i><img src="../../../assets/img/regNo.png"></i>  Reg No :
+          </label>
+          <br>
+          <input class="form-control" type="text" name="regNo">
+        </div>
+
+        <div class="col-md-5">
+          <label>
+            <i><img src="../../../assets/img/hospital.png"></i> Hospital :
+          </label>
+          <br>
+          <input class="form-control" type="text" name="regNo">
+        </div>
+
+        <div class="col-md-5">
+          <label>
+            <i><img src="../../../assets/img/speciality.png"></i> Specialty :
+          </label>
+
+          <br>
+          <input class="form-control" type="text" name="regNo">
+        </div>
       </div>
-    <!--</div>-->
-    <!--<div class="form-group row">-->
-      <div class="col-md-5">
-        <label for="dname"><i><img src="../../../assets/img/contact.png"></i>  Contact</label>
-        <input class="form-control" type="text" id="contact" name="contact" disabled>
+    </div>
+
+
+    <div class="form-group row" hidden="hidden">
+      <div class="col-md-2">
+        <input class="form-control" type="text" name="hosId">
       </div>
     </div>
     <div class="form-group row">
       <div class="col-md-6">
-        <button class="button cancel">Cancel</button>
-        <button class="button delete">Delete</button>
+        <button class="button delete">Remove</button>
+        <button class="button cancel" routerLink="adminHome">Cancel</button>
       </div>
     </div>
+    <br>
   </form>
-  <br>
 </div>
 <br>
 <br>
+
