@@ -1,10 +1,39 @@
+<br> <br>
 
-   <br> <br>
 
+<div class="container" id="main">
+  <br>
+  <form>
+    <div class="form-group row">
+      <div class="col-md-6">
+        <label>Select Doctor Name</label>
+        <select id="cmbIDoctorNameAddSchedule" class="form-control"></select>
+      </div>
+      <div class="col-md-4">
+        <label for="txtSpecialityAddSchedule"><i><img src="../../../assets/img/speciality.png"></i>Speciality</label>
+        <input class="form-control" type="text" id="txtSpecialityAddSchedule" name="specialityAddSchedule" disabled>
+      </div>
+    </div>
 
-<div style="width:800px; margin:0 auto;width:800px; margin:0 auto;" class="container" id="main" >
-    <form >
+    <div class="form-group row">
+      <div class="col-md-6">
+        <label>Select Hospitals</label>
+        <select id="cmbAllHospitalsAddSchedule" class="form-control"></select>
+      </div>
+      <div class="col-md-4">
+        <label>Date</label>
+        <select id="cmbDateAddSchedule" class="form-control">
+          <option value="sunday">Sunday</option>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+        </select>
+      </div>
 
+<<<<<<< HEAD
         <div class="form-group row">
           <div class="col-sm-5">
         <label> <i><img src="../../../assets/img/doctor.png"></i> Doctor Name</label>
@@ -38,8 +67,36 @@
         <option value="saturday">Saturday</option>
         </select>
         </div>
+=======
 
+    </div>
+    <div class="form-group row">
+      <div class="col-md-6">
+        <label for="txtTimePeriodAddSchedule">Time Period</label>
+        <input class="form-control" type="text" id="txtTimePeriodAddSchedule" name="timePeriodAddSchedule" placeholder="Enter Time Period...">
+      </div>
+    </div>
 
+    <div class="form-group row">
+      <div class="col-md-6">
+        <label for="txtPatientsPerDay">Patients Per Day</label>
+        <input id="txtPatientsPerDay" type="number" class="form-control">
+      </div>
+    </div>
+
+>>>>>>> a9bddc3a4215453bb11d1c597aeffed901183716
+
+    <div class="form-group">
+      <h5 style="align-content: center">Schedule Details </h5>
+      <table id="tblSchedule" class="table table-bordered table-hover">
+        <thead class="table-dark">
+        <tr>
+
+          <th> Date</th>
+          <th>Time Periad</th>
+          <th>Patients PerDay</th>
+
+<<<<<<< HEAD
         </div>
         <div class="form-group row">
             <div class="col-md-6">
@@ -87,6 +144,30 @@
             </div>
         </div>
     </form>
+=======
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <br>
+    <div class="col-sm-5" hidden="hidden">
+      <input type="text" id="doctorIdAddSchedule" name="doctorIdAddSchedule">
+      <input type="text" id="specialityAddSchedule " name="specialityAddSchedule ">
+      <input type="text" id="hospitalIdAddSchedule" name="hospitalIdAddSchedule">
+      <input type="text" id="dateIdAddSchedule" name="dateIdAddSchedule">
+    </div>
+    <div class="form-group row">
+      <div class="col-md-6">
+        <button class="button add">Confirm</button>
+        <button class="button cancel">Cancel</button>
+      </div>
+    </div>
+  </form>
+  <br>
+>>>>>>> a9bddc3a4215453bb11d1c597aeffed901183716
 </div>
 
 <br> <br>
