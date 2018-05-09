@@ -26,7 +26,7 @@
             <i><img src="../../../assets/img/address.png"></i>  Address :
           </label>
           <br>
-          <input class="form-control" type="text" name="address">
+          <input class="form-control" type="text" name="addressDeleteDoctor" id="txtAddressDeleteDoctor" disabled>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
             <i><img src="../../../assets/img/nic.png"></i>  Nic :
           </label>
           <br>
-          <input class="form-control" type="text" name="nic">
+          <input class="form-control" type="text" name="nicDeleteDoctor" id="txtNICDeleteDoctor" disabled>
         </div>
 
         <div class="col-md-5">
@@ -46,7 +46,7 @@
             <i><img src="../../../assets/img/contact.png"></i>  Contact No :
           </label>
           <br>
-          <input class="form-control" type="text" name="contact">
+          <input class="form-control" type="text" name="contactDeleteDoctor" id="txtContactDeleteDoctor"disabled>
         </div>
 
         <div class="col-md-5">
@@ -54,7 +54,7 @@
             <i><img src="../../../assets/img/regNo.png"></i>  Reg No :
           </label>
           <br>
-          <input class="form-control" type="text" name="regNo">
+          <input class="form-control" type="text" name="regNoDeleteDoctor" id="txtRegNoDeleteDoctor"disabled>
         </div>
 
         <div class="col-md-5">
@@ -62,7 +62,7 @@
             <i><img src="../../../assets/img/hospital.png"></i> Hospital :
           </label>
           <br>
-          <input class="form-control" type="text" name="regNo">
+          <input class="form-control" type="text" name="hospitalDeleteDoctor" id="txtHospitalDeleteDoctor"disabled>
         </div>
 
         <div class="col-md-5">
@@ -71,7 +71,7 @@
           </label>
 
           <br>
-          <input class="form-control" type="text" name="regNo">
+          <input class="form-control" type="text" name="specialityDeleteDoctor" id="txtSpecialtyDeleteDoctor" disabled>
         </div>
       </div>
     </div>
@@ -79,12 +79,12 @@
 
     <div class="form-group row" hidden="hidden">
       <div class="col-md-2">
-        <input class="form-control" type="text" name="hosId">
+        <input class="form-control" type="text" name="doctorIdDeleteDoctor">
       </div>
     </div>
     <div class="form-group row">
       <div class="col-md-6">
-        <button class="button delete">Remove</button>
+        <button class="button delete" id="btnDeleteDoctor">Remove</button>
         <button class="button cancel" routerLink="adminHome">Cancel</button>
       </div>
     </div>
