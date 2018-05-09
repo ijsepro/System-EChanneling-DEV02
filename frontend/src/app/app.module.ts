@@ -1,11 +1,9 @@
+
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 
-import {CommonModule} from '@angular/common';
-import {RouterModule, Routes} from '@angular/router';
-
-
+import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './view/home/home.component';
 import {AdminHomeComponent} from './view/admin-home/admin-home.component';
@@ -25,75 +23,7 @@ import {RemoveScheduleComponent} from './view/remove-schedule/remove-schedule.co
 import {DeleteDoctorComponent} from './view/remove-doctor/delete-doctor.component';
 import {AddSpecialtyComponent} from './view/add-specialty/add-specialty.component';
 import { RemoveSpecialtyComponent } from './view/remove-specialty/remove-specialty.component';
-
-const routes: Routes = [
-  {
-    path: 'adminHome',
-    component: AdminHomeComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'accountSetting',
-    component: AccountSettingComponent
-  },
-  {
-    path: 'addDoctor',
-    component: AddDoctorComponent
-  },
-  {
-    path: 'addHospital',
-    component: ManageHospitalComponent
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'addSchedule',
-    component: AddNewScheduleComponent
-  },
-  {
-    path: 'deleteHospital',
-    component: RemoveHospitalComponent
-  },
-  {
-    path: 'updateSchedule',
-    component: ModifyScheduleComponent
-  },
-  {
-    path: 'deleteSchedule',
-    component: RemoveScheduleComponent
-  },
-  {
-    path: 'deleteDoctor',
-    component: DeleteDoctorComponent
-  },
-  {
-    path: 'addSpecialty',
-    component: AddSpecialtyComponent
-  },
-  {
-    path: 'removeSpecialty',
-    component: RemoveSpecialtyComponent
-  },
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  },
-  {
-    path: '**',
-    redirectTo: '/home',
-    pathMatch: 'full'
-  }
-];
+import { TestComponent } from './view/test/test.component';
 
 @NgModule({
   declarations: [
@@ -115,15 +45,14 @@ const routes: Routes = [
     AddNewScheduleComponent,
     ModifyScheduleComponent,
     AddSpecialtyComponent,
-    RemoveSpecialtyComponent
+    RemoveSpecialtyComponent,
+    TestComponent
   ],
   imports: [
-    CommonModule,
-    RouterModule.forRoot(routes),
     BrowserModule,
+    AppRoutingModule,
     MDBBootstrapModule.forRoot()
   ],
-  exports: [RouterModule],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
