@@ -1,127 +1,82 @@
 
    <br> <br>
-<!--<div style="width:800px; margin:0 auto;width:800px; margin:0 auto;">
-
-   <div class="row">
-
-     
-        <div class="col-sm-3">
-        <label>Doctor Id</label>
-        <select id="cmbModifyIDoctorId" class="form-control"></select>
-        </div>
-
-          <div class="col-sm-4">
-            <label for="txtModifyscheduleDate"> Date</label>
-       <input type="text" name="scheduleDateModify" class="form-control" id="txtModifyscheduleDate">
-        </div>
-
-          
-    <div class="row">
-
-      <div class="col-sm-3">
-       <label for="txtModifyTimePeriod">Time Period</label>
-       <input type="text" name="timePeriodModify" class="form-control" id="txtModifyTimePeriod">
-        </div>
-
-      <div class="col-sm-3">
-       <label for="txtModifyPatientsPerDay">Patients PerDay</label>
-       <input type="text" name="patientsPerDayModify" class="form-control" id="txtModifyPatientsPerDay">
-        </div>
-
-     <div class="col-sm-3">
-    <button class="button btnModify" >Modify Schedule</button>
-    </div>
-    </div>
-
-       <div class="form-group">
-
-                <table id="tblModifySchedule" class="table table-bordered table-hover">
-                    <thead class="table-dark">
-                    <tr>
-                      
-                        <th>Doctor Id</th>
-                         <th> Date </th>
-                          <th>Time Periad</th>
-                           <th>Patients PerDay</th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-                </div>
-</div>
-</div>-->
-
-<div style="width:800px; margin:0 auto;width:800px; margin:0 auto;" class="container" id="main" >
+   <div style="width:800px; margin:0 auto;width:800px; margin:0 auto;" class="container" id="main" >
     <form >
+      <br> <br>
+      <div class="text-center">
+        <h3 class="pink-text mb-5"><strong>Modify Schedule</strong></h3>
+      </div>
 
-        <div class="form-group row">
-          <div class="col-sm-5">
-        <label>Doctor Name</label>
-        <select id="cmbModifyIDoctorName" class="form-control"></select>
+      <div class="form-group row">
+        <div class="col-sm-5">
+            <label><i><img src="../../../assets/img/doctor.png"></i> Doctor Name</label>
+            <select id="cmbDoctorNameModifySchedule" class="form-control"></select>
         </div>
         <div class="col-sm-5">
-        <label>Hospitals</label>
-        <select id="cmbModifyHospitals" class="form-control"></select>
+          <label><i><img src="../../../assets/img/hospital.png"></i> Hospitals</label>
+           <select id="cmbHospitalNameModifySchedule" class="form-control"></select>
         </div>
+      </div>
+
+      <div class="form-group">
+        <h5 style="align-content: center">Schedule Details </h5>
+        <table id="tblScheduleDetailsModifySchedule" class="table table-bordered table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th> Date </th>
+              <th>Time Periad</th>
+              <th>Patients PerDay</th>
+            </tr>
+          </thead>
+            <tbody>
+            </tbody>
+        </table>
+      </div>
+
+      <div class="form-group row">
+        <div class="md-form">
+          <div class="col-md-9">
+           <label><i><img src="../../../assets/img/icons8-today-25.png"></i> Date :</label>
+            <br>
+            <input class="form-control" type="text" name="dateModifySchedule" >
+          </div>
         </div>
 
-            <div class="form-group">
-                <h5 style="align-content: center">Schedule Details </h5>
-                <table id="tblModifySchedule" class="table table-bordered table-hover">
-                    <thead class="table-dark">
-                    <tr>
-                      
-                         <th> Date </th>
-                          <th>Time Periad</th>
-                           <th>Patients PerDay</th>
-                     
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-                </div>
-    <div class="form-group row">
-          <div class="col-sm-5">
-          <label for="modifydate">Date</label>
-         <input class="form-control" type="text" id="txtModifyDate" name="modifyDate" >
+       <div class="md-form">
+        <div class="col-md-9">
+          <label><i><img src="../../../assets/img/patient-25(1).png"></i> Patients Per Day :</label>
+          <br>
+          <input class="form-control" type="text" name="patientsPerDayModifySchedule" >
         </div>
-        <div class="col-sm-5">
-         <label for="modifypatientsPerDay">patients Per Day</label>
-         <input class="form-control" type="text" id="txtmodifypatientsPerDay" name="modifypatientsPerDay" >
-        </div>
-        </div>
+      </div>
+      </div>
 
-
-
+      <div class="form-group row">
+      </div>
         <div class="form-group row">
-          
-        </div>
-        <div class="form-group row">
-            <div class="col-md-6">
-                <label for="timePeriod">Time Period</label>
-                <input class="form-control" type="text" id="txtTimePeriod" name="timePeriod" placeholder="Enter Time Period...">
+          <div class="md-form">
+            <div class="col-md-9">
+              <label><i><img src="../../../assets/img/icons8-time-40.png"></i> Time Period :</label>
+              <br>
+              <input class="form-control" type="text" name="timePeriodModifySchedule" >
             </div>
-        </div> 
+          </div>
+        </div>
 
       <div class="col-sm-5" hidden="hidden">
-         <input type="text" id="modifydoctorId" name="modifydoctorId">
-          <input type="text" id="modifyspeciality " name="modifyspeciality ">
-           <input type="text" id="modifyhospitalId" name="modifyhospitalId">
-            <input type="text" id="modifydateId" name="modifydateId">
-         </div>
-        
+        <input type="text" id="txtdoctorIdModifySchedule" name="doctorIdModifySchedule">
+        <input type="text" id="txtspecialityModifySchedule " name="specialityModifySchedule ">
+        <input type="text" id="txthospitalIdModifySchedule" name="hospitalIdModifySchedule">
+        <input type="text" id="txtdateIdModifySchedule" name="dateIdModifySchedule">
+      </div>
+
       <div class="form-group row">
-            <div class="col-md-6">
-                 <button class="button update">Modify</button>
-                
-                <button class="button cancel">Cancel</button>
-   
-            </div>
+        <div class="col-md-6">
+          <button class="button modifySchedule">Modify</button>
+          <button class="button cancel">Cancel</button>
+        </div>
         </div>
     </form>
 </div>
 
-<br> <br>  
+<br> <br>
