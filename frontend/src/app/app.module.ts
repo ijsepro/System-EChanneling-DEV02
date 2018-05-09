@@ -24,6 +24,7 @@ import {DeleteDoctorComponent} from './view/remove-doctor/delete-doctor.componen
 import {AddSpecialtyComponent} from './view/add-specialty/add-specialty.component';
 import { RemoveSpecialtyComponent } from './view/remove-specialty/remove-specialty.component';
 import { TestComponent } from './view/test/test.component';
+import {ModifyDoctorComponent} from './view/modify-doctor/modify-doctor.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { TestComponent } from './view/test/test.component';
     ModifyScheduleComponent,
     AddSpecialtyComponent,
     RemoveSpecialtyComponent,
-    TestComponent
+    TestComponent,
+    ModifyDoctorComponent
   ],
   imports: [
     BrowserModule,
