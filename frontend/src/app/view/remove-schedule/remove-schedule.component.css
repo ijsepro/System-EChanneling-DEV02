@@ -45,13 +45,13 @@
   color: white;
 }
 
-.delete {
+.removeSchedule {
   background-color: white;
   color: black;
   border: 2px solid red;
 }
 
-.delete:hover {
+.removeSchedule:hover {
   background-color: red;
   color: white;
 }
