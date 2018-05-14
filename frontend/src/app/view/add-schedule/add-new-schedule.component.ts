@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AmazingTimePickerService} from 'amazing-time-picker';
 
 @Component({
   selector: 'app-add-new-schedule',
@@ -6,10 +7,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-new-schedule.component.css']
 })
 export class AddNewScheduleComponent implements OnInit {
+  from: string;
+  to: string;
 
-  constructor() { }
+  constructor(private atp: AmazingTimePickerService) {
+  }
+
 
   ngOnInit() {
   }
-
+  openFrom() {
+    const amazingTimePicker = this.atp.open({
+      theme: 'material-orange',
+    });
+    amazingTimePicker.afterClose().subscribe(time => {
+      this.from = time;
+    });
+  }
+  openTo() {
+    const amazingTimePicker = this.atp.open({
+      theme: 'material-purple',
+    });
+    amazingTimePicker.afterClose().subscribe(time => {
+      this.to = time;
+    });
+  }
 }

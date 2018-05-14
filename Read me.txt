@@ -1,0 +1,3 @@
+if time picker is not working install -----------------
+
+ npm install amazing-time-picker --save
