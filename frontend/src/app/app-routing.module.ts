@@ -20,7 +20,7 @@ import {AddSpecialtyComponent} from './view/add-specialty/add-specialty.componen
 import { RemoveSpecialtyComponent } from './view/remove-specialty/remove-specialty.component';
 import { TestComponent } from './view/test/test.component';
 import {ModifyDoctorComponent} from './view/modify-doctor/modify-doctor.component';
-
+import { CheckAvailabilityComponent } from './view/add-apointment/check-availability/check-availability.component';
 
 const routes: Routes = [
   {
@@ -86,6 +86,10 @@ const routes: Routes = [
   {
     path: 'test',
     component: TestComponent
+  },
+  {
+    path: 'checkAvailability',
+    component: CheckAvailabilityComponent
   },
   {
     path: '',
