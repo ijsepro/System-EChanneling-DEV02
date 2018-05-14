@@ -26,6 +26,8 @@ import { RemoveSpecialtyComponent } from './view/remove-specialty/remove-special
 import { TestComponent } from './view/test/test.component';
 import {ModifyDoctorComponent} from './view/modify-doctor/modify-doctor.component';
 
+import { AmazingTimePickerModule } from 'amazing-time-picker';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,8 @@ import {ModifyDoctorComponent} from './view/modify-doctor/modify-doctor.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    AmazingTimePickerModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [],
